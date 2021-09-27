@@ -11,6 +11,7 @@
 		49E970372701959F0094A422 /* SimpleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E970362701959F0094A422 /* SimpleNode.swift */; };
 		49E97039270195BE0094A422 /* SimpleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E97038270195BE0094A422 /* SimpleLinkedList.swift */; };
 		49E9703C2701A0FA0094A422 /* CacheLRU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E9703B2701A0FA0094A422 /* CacheLRU.swift */; };
+		49E970402701AF830094A422 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E9703F2701AF830094A422 /* Demo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		49E970362701959F0094A422 /* SimpleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNode.swift; sourceTree = "<group>"; };
 		49E97038270195BE0094A422 /* SimpleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLinkedList.swift; sourceTree = "<group>"; };
 		49E9703B2701A0FA0094A422 /* CacheLRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheLRU.swift; sourceTree = "<group>"; };
+		49E9703F2701AF830094A422 /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		49E9701D270195240094A422 /* SimpleCacheLRU */ = {
 			isa = PBXGroup;
 			children = (
+				49E9703E2701AF6D0094A422 /* Demo */,
 				49E9703D2701AEB10094A422 /* CacheLRU */,
 				49E9703A27019FDF0094A422 /* LinkedList */,
 				49E9701F270195240094A422 /* Info.plist */,
@@ -103,6 +106,14 @@
 				49E9703B2701A0FA0094A422 /* CacheLRU.swift */,
 			);
 			path = CacheLRU;
+			sourceTree = "<group>";
+		};
+		49E9703E2701AF6D0094A422 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				49E9703F2701AF830094A422 /* Demo.swift */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 			files = (
 				49E9703C2701A0FA0094A422 /* CacheLRU.swift in Sources */,
 				49E97039270195BE0094A422 /* SimpleLinkedList.swift in Sources */,
+				49E970402701AF830094A422 /* Demo.swift in Sources */,
 				49E970372701959F0094A422 /* SimpleNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.GanNaSong.SimpleCacheLRU;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -405,6 +418,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.GanNaSong.SimpleCacheLRU;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
