@@ -24,24 +24,43 @@ public class SimpleLinkedList<T> {
 
   // MARK: - Public Methods
 
-  public func append(value: T) {
+  func addHead(value: T) -> Node {
     let newNode = Node(value: value)
-    if let tailNode = tail {
-      newNode.previous = tailNode
-      tailNode.next = newNode
-    } else {
+
+    defer {
       head = newNode
+      count += 1
     }
 
-    tail = newNode
-    count += 1
+    guard let headNode = head else {
+      tail = newNode
+      return newNode
+    }
+
+    headNode.previous = newNode
+    newNode.previous = nil
+    newNode.next = headNode
+    return newNode
   }
 
-  public func removeAll() {
-    head = nil
-    tail = nil
-    count = 0
-  }
+//  public func append(value: T) {
+//    let newNode = Node(value: value)
+//    if let tailNode = tail {
+//      newNode.previous = tailNode
+//      tailNode.next = newNode
+//    } else {
+//      head = newNode
+//    }
+//
+//    tail = newNode
+//    count += 1
+//  }
+//
+//  public func removeAll() {
+//    head = nil
+//    tail = nil
+//    count = 0
+//  }
 
   public func moveToHead(_ node: Node) {
     guard node !== head else { return }

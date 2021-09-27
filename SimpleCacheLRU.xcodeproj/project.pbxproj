@@ -10,6 +10,7 @@
 		49E97025270195240094A422 /* SimpleCacheLRU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E9701B270195240094A422 /* SimpleCacheLRU.framework */; };
 		49E970372701959F0094A422 /* SimpleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E970362701959F0094A422 /* SimpleNode.swift */; };
 		49E97039270195BE0094A422 /* SimpleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E97038270195BE0094A422 /* SimpleLinkedList.swift */; };
+		49E9703C2701A0FA0094A422 /* CacheLRU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E9703B2701A0FA0094A422 /* CacheLRU.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		49E9702B270195240094A422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49E970362701959F0094A422 /* SimpleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNode.swift; sourceTree = "<group>"; };
 		49E97038270195BE0094A422 /* SimpleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLinkedList.swift; sourceTree = "<group>"; };
+		49E9703B2701A0FA0094A422 /* CacheLRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheLRU.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		49E9701D270195240094A422 /* SimpleCacheLRU */ = {
 			isa = PBXGroup;
 			children = (
+				49E9703D2701AEB10094A422 /* CacheLRU */,
 				49E9703A27019FDF0094A422 /* LinkedList */,
 				49E9701F270195240094A422 /* Info.plist */,
 			);
@@ -92,6 +95,14 @@
 				49E97038270195BE0094A422 /* SimpleLinkedList.swift */,
 			);
 			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		49E9703D2701AEB10094A422 /* CacheLRU */ = {
+			isa = PBXGroup;
+			children = (
+				49E9703B2701A0FA0094A422 /* CacheLRU.swift */,
+			);
+			path = CacheLRU;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E9703C2701A0FA0094A422 /* CacheLRU.swift in Sources */,
 				49E97039270195BE0094A422 /* SimpleLinkedList.swift in Sources */,
 				49E970372701959F0094A422 /* SimpleNode.swift in Sources */,
 			);
