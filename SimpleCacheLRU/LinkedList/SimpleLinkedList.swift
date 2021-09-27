@@ -43,25 +43,6 @@ public class SimpleLinkedList<T> {
     return newNode
   }
 
-//  public func append(value: T) {
-//    let newNode = Node(value: value)
-//    if let tailNode = tail {
-//      newNode.previous = tailNode
-//      tailNode.next = newNode
-//    } else {
-//      head = newNode
-//    }
-//
-//    tail = newNode
-//    count += 1
-//  }
-//
-//  public func removeAll() {
-//    head = nil
-//    tail = nil
-//    count = 0
-//  }
-
   public func moveToHead(_ node: Node) {
     guard node !== head else { return }
     let prev = node.previous
