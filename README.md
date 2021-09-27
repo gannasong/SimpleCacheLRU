@@ -18,5 +18,5 @@ let cacheImage = cache.getValue(for: url)
 ```
 
 ## TODO
-- [ ] concurrency
-- [ ] read-write-lock
+- [X] concurrency
+- [X] read-write-lock
